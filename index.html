@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)file:///C:/Users/publi/Desktop/CCC/WordQuest-Mobile.html -->
+<!-- saved from url=(0054)file:///C:/Users/publi/Desktop/CCC/kikisadventure.html -->
 <html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>WordQuest · Farm Adventure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Kiki">
+<meta name="theme-color" content="#3a2010">
+<title>Kiki's Adventure</title>
 <link href="file:///C:/Users/publi/Desktop/CCC/WordQuest%20%C2%B7%20Farm%20Adventure1_files/css2" rel="stylesheet">
 <style>
 @font-face { font-family:'KG Red Hands'; src:local('KG Red Hands'); }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);}
 html,body{
-  width:100%;height:100%;overflow:hidden;
+  width:100%;height:100%;min-height:100dvh;overflow:hidden;
   background:#3a2010;
   -webkit-user-select:none;user-select:none;
   -webkit-tap-highlight-color:transparent;
@@ -17,6 +22,8 @@ html,body{
 body{
   display:flex;align-items:center;justify-content:center;
   min-height:100vh;min-height:100dvh;
+  padding-top:env(safe-area-inset-top);
+  padding-bottom:env(safe-area-inset-bottom);
 }
 /* ─── Viewport scaler ─── */
 #scaler{
@@ -938,7 +945,7 @@ body{
 </style>
 </head>
 <body>
-<div id="scaler">
+<div id="scaler" style="transform: scale(0.830544);">
 
 <!-- ═══════ HOME SCREEN ═══════ -->
 <div id="home" class="screen active">
@@ -1145,7 +1152,7 @@ body{
     <div class="sq-hdr-title">🎯 APPLE TRAIL</div>
     <div class="sq-tag sq-tag-easy" style="background: rgb(238, 247, 225); color: rgb(39, 157, 7);">Easy</div>
     <div class="sq-tag sq-tag-fruit">Fruit</div>
-    <div class="sq-words"><span id="sqWordCount">2 / 10<br>words</span></div>
+    <div class="sq-words"><span id="sqWordCount">1 / 10<br>words</span></div>
   </div>
 
   <!-- MAIN SPELL PANEL: abs x=15,y=230,w=410,h=563 -->
@@ -1167,7 +1174,7 @@ body{
     </div>
 
     <!-- Letter boxes: panel-local x=55,y=220 -->
-    <div class="sq-letters" id="sqLetters"><div class="sq-lb filled" data-idx="0">G</div><div class="sq-lb empty" data-idx="1"></div><div class="sq-lb empty" data-idx="2"></div><div class="sq-lb empty" data-idx="3"></div><div class="sq-lb filled" data-idx="4">E</div></div>
+    <div class="sq-letters" id="sqLetters"><div class="sq-lb filled" data-idx="0">A</div><div class="sq-lb empty" data-idx="1"></div><div class="sq-lb empty" data-idx="2"></div><div class="sq-lb empty" data-idx="3"></div><div class="sq-lb filled" data-idx="4">E</div></div>
 
     <!-- Keyboard: panel-local x=20,y=319 -->
     <div class="sq-keyboard" id="sqKeyboard">
@@ -1197,8 +1204,8 @@ body{
   <div class="sq-toolbar">
     <button class="sq-back" onclick="sqGoBack()"><span class="sq-back-arrow">←</span>Back</button>
     <div class="sq-qpill">
-    <div class="sq-qlbl" id="sqQLabel">Question 2 / 10</div>
-    <div class="sq-pbg"><div class="sq-pfl" id="sqPFill" style="width: 10%;"></div></div>
+    <div class="sq-qlbl" id="sqQLabel">Question 1 / 10</div>
+    <div class="sq-pbg"><div class="sq-pfl" id="sqPFill" style="width: 8%;"></div></div>
     <div class="sq-rewards">
       <img src="data:image/webp;base64,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" alt="xp">
       <span>20 XP</span>
@@ -1220,7 +1227,7 @@ body{
 <!-- ═══════ PET SCREEN ═══════ -->
 <div id="pet" class="screen">
   <div class="pet-bg" id="petBg">
-    <img src="./index_files/bg_day.png" id="petBgImg" alt="">
+    <img src="./index_files/bg_evening.png" id="petBgImg" alt="">
   </div>
   <div class="pet-bg-overlay"></div>
   <div class="top-bar">
@@ -1247,9 +1254,9 @@ body{
     <img class="kiki-character" id="petKikiImg" src="./index_files/kiki_default.png" alt="Kiki" style="animation: 3s ease-in-out 0s infinite alternate none running kikiBreathing; opacity: 1; transform: scale(1);">
   </div>
   <div class="pet-status-bar">
-    <div class="pet-pill"><div class="pet-pill-top"><span class="pet-pill-icon">😊</span><span class="pet-pill-name">Mood</span></div><div class="pet-pill-bar"><div class="pet-pill-fill" id="petMoodBar" style="width:80%"></div></div></div>
-    <div class="pet-pill"><div class="pet-pill-top"><span class="pet-pill-icon">🍎</span><span class="pet-pill-name">Hunger</span></div><div class="pet-pill-bar"><div class="pet-pill-fill" id="petHungerBar" style="width:60%"></div></div></div>
-    <div class="pet-pill"><div class="pet-pill-top"><span class="pet-pill-icon">⚡</span><span class="pet-pill-name">Energy</span></div><div class="pet-pill-bar"><div class="pet-pill-fill" id="petEnergyBar" style="width:70%"></div></div></div>
+    <div class="pet-pill"><div class="pet-pill-top"><span class="pet-pill-icon">😊</span><span class="pet-pill-name">Mood</span></div><div class="pet-pill-bar"><div class="pet-pill-fill" id="petMoodBar" style="width: 78%;"></div></div></div>
+    <div class="pet-pill"><div class="pet-pill-top"><span class="pet-pill-icon">🍎</span><span class="pet-pill-name">Hunger</span></div><div class="pet-pill-bar"><div class="pet-pill-fill" id="petHungerBar" style="width: 55%;"></div></div></div>
+    <div class="pet-pill"><div class="pet-pill-top"><span class="pet-pill-icon">⚡</span><span class="pet-pill-name">Energy</span></div><div class="pet-pill-bar"><div class="pet-pill-fill" id="petEnergyBar" style="width: 67%;"></div></div></div>
   </div>
   <div class="bottom-nav">
     <div class="nav-item ni-map"><div class="nav-circle sz66"><img src="data:image/webp;base64,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"></div><span class="nav-label">MAP</span></div>
@@ -1291,7 +1298,7 @@ body{
       </div>
       <div class="stg-slider-row">
         <span class="stg-slider-icon">🔇</span>
-        <input type="range" class="stg-slider" id="bgmSlider" min="0" max="100" value="45" style="background: linear-gradient(to right, rgb(250, 182, 39) 45%, rgb(223, 192, 144) 45%);">
+        <input type="range" class="stg-slider" id="bgmSlider" min="0" max="100" value="45">
         <span class="stg-slider-icon">🔊</span>
       </div>
       <div class="stg-row">
@@ -1303,7 +1310,7 @@ body{
       </div>
       <div class="stg-slider-row">
         <span class="stg-slider-icon">🔇</span>
-        <input type="range" class="stg-slider" id="sfxSlider" min="0" max="100" value="70" style="background: linear-gradient(to right, rgb(250, 182, 39) 70%, rgb(223, 192, 144) 70%);">
+        <input type="range" class="stg-slider" id="sfxSlider" min="0" max="100" value="70">
         <span class="stg-slider-icon">🔊</span>
       </div>
     </div>
@@ -1386,15 +1393,14 @@ body{
 
 
 <!-- Modal -->
-<div id="modal-wrap" style="display: none;">
-  <div id="modal-sheet" style="transform: translateY(100%);">
+<div id="modal-wrap">
+  <div id="modal-sheet">
     <div class="modal-handle"></div>
-    <span class="modal-emoji" id="modal-emoji">🐄</span>
-    <div class="modal-title" id="modal-title">Cow Ranch</div>
-    <div class="modal-desc" id="modal-desc">Complete Apple Trail first
-10 words · Easy</div>
-    <div class="modal-stars" id="modal-stars"><span style="font-size: 28px;">☆</span><span style="font-size: 28px;">☆</span><span style="font-size: 28px;">☆</span></div>
-    <button class="modal-start-btn" id="modal-btn" disabled="" style="opacity: 0.5;">🔒 LOCKED</button>
+    <span class="modal-emoji" id="modal-emoji"></span>
+    <div class="modal-title" id="modal-title"></div>
+    <div class="modal-desc" id="modal-desc"></div>
+    <div class="modal-stars" id="modal-stars"></div>
+    <button class="modal-start-btn" id="modal-btn">START LESSON ⭐</button>
   </div>
 </div>
 
@@ -1408,7 +1414,10 @@ body{
 (function(){
   var W=440,H=956,el=document.getElementById('scaler');
   function fit(){
-    var s=Math.min(window.innerWidth/W,window.innerHeight/H);
+    var cs=getComputedStyle(document.documentElement);
+    var st=parseFloat(cs.getPropertyValue('--sat'))||0;
+    var sb=parseFloat(cs.getPropertyValue('--sab'))||0;
+    var s=Math.min(window.innerWidth/W,(window.innerHeight-st-sb)/H);
     el.style.transform=s<1?'scale('+s+')':'';
   }
   fit();
